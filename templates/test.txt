@@ -1,7 +1,0 @@
-@app.route("/stat", methods=['GET', 'POST'])
-def main():
-    f = open('usercount.txt')
-    count_user = f.read()
-    f.close()
-
-    return render_template("stat.html", headers=request.headers, date=str(datetime.now()), count=count_user)s

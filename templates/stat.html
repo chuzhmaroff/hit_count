@@ -5,19 +5,28 @@
     <title>Statistics Site</title>
 </head>
 <body>
-<a class="Link" href="http://127.0.0.1:5000/">Link to start page</a>
-<br>
+<hr>
+<ul>
+<li><a class="Link" href="https://hit-count-cclmk1.herokuapp.com/">Стартовая</a></li>
+
+</ul>
+<hr>
 Hello to statistics page! <br>
 Текушая дата - {{ date }} <br>
 Здесь вы можете посмотреть всю информацию о последних посещений сайта. <br>
-Количество посещений сайт за все время  - {{ count_user }} <br>
+Количество посещений сайт за все время ( не уникальные)  - {{ count_user }} <br>
+Уникальные ip - {{ count_uniq_ip }}
+Уникальные cookies - {{ count_uniq_cookie }} <br>
 Ифнормация о вашем подключении :    <br>
 Ваш ip адресс  - {{ ip_adress }}    <br>
 Ваш номер cookies - {{ cookies }}   <br>
 Ваш браузер - {{ user_agent }}      <br>
 Ваш браузер поддерживает языки - {{ accept_lang }} <br>
-
-
-
+Ваше разрешение -
+<script language=JavaScript>
+r1=(screen.width+'*'+screen.height+'&nbsp;');
+document.write(r1)
+</script>
+{{ full_info }}
 </body>
 </html>
