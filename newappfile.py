@@ -9,18 +9,31 @@ app = Flask(__name__)
 def main():
     count_non_unique_user()
     user_cookies = str(request.cookies)
+    if get_bool_unique_ip(get_ip_address()):
+        add_unique_ip(get_ip_address())
+        count_unique_user_for_ip()
     if len(user_cookies) == 2:  # значит куки пустые и он точно новый
-        count_unique_user()
+        count_unique_user_for_cookie()
         resp = make_response(render_template('index.html'))
         resp.set_cookie('UID', create_unique_cookie_for_user(), max_age=60 * 60 * 24 * 365 * 4)  # 4 years
         return resp
     else:  # у него уже есть куки от нашего сайта
-        count_non_unique_user()
         resp = make_response(render_template('index.html'))
-        resp.set_cookie('UID', create_unique_cookie_for_user(), max_age=60 * 60 * 24 * 365 * 100)  # 4 years)
         return resp
 
 
+def get_bool_unique_ip(ip):
+    with open('unique_ip.txt') as f:
+        data = f.read().split('\n')
+        if ip in data:
+            return True
+        else:
+            return False
+
+
+def add_unique_ip(ip):
+    with open('unique_ip.txt', 'r+') as f:
+        f.write(ip + '\n')
 
 
 def count_non_unique_user():
@@ -40,8 +53,16 @@ def create_unique_cookie_for_user():
     return enter_cookie
 
 
-def count_unique_user():
-    with open("count_unique_user.txt", "r+")as f:
+def count_unique_user_for_ip():
+    with open("count_unique_user_for_ip.txt", "r+")as f:
+        count = int(f.read()) + 1
+        f.seek(0)
+        f.truncate()
+        f.write(str(count))
+
+
+def count_unique_user_for_cookie():
+    with open("count_unique_user_for_cookie.txt", "r+")as f:
         count = int(f.read()) + 1
         f.seek(0)
         f.truncate()
@@ -53,7 +74,7 @@ def get_ip_address():
         ip = (request.environ['REMOTE_ADDR'])
     else:
         ip = (request.environ['HTTP_X_FORWARDED_FOR'])
-    return ip
+    return str(ip)
 
 
 if __name__ == '__main__':
