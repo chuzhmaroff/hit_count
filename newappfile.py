@@ -22,6 +22,25 @@ def main():
         return resp
 
 
+@app.route("/stat", methods=['GET', 'POST'])
+def stat():
+    with open("count_non_unique_user.txt") as f:
+        count_non_unique_user = f.read()
+    with open("count_unique_user_for_cookie.txt") as f:
+         count_unique_user_for_cookies = f.read()
+    with open("count_unique_user_for_ip.txt") as f:
+        count_unique_user_for_ip = f.read()
+    resp = render_template("stat.html", date=str(datetime.now()),
+                           count_user=count_non_unique_user,
+                           count_unique_ip=count_unique_user_for_ip,
+                           count_unique_cookie=count_unique_user_for_cookies,
+                           ip_address=get_ip_address(),
+                           cookies=request.cookies,
+                           user_agent=request.user_agent,
+                           accept_lang=request.accept_languages)
+    return resp
+
+
 def get_bool_unique_ip(ip):
     with open('unique_ip.txt') as f:
         data = f.read().split('\n')

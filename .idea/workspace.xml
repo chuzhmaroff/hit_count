@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ccb4a5eb-2120-42b5-b8f1-82fb5394e753" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/unique_ip.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/count_non_unique_user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/count_non_unique_user.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count_unique_user.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/newappfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/newappfile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/stat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stat.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571847820866</updated>
-      <workItem from="1571847822504" duration="1780000" />
+      <workItem from="1571847822504" duration="4251000" />
     </task>
     <servers />
   </component>
@@ -80,6 +79,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hit_count$hit_count.coverage" NAME="hit_count Coverage Results" MODIFIED="1571849601681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/hit_count$hit_count.coverage" NAME="hit_count Coverage Results" MODIFIED="1571853802534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
