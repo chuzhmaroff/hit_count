@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ccb4a5eb-2120-42b5-b8f1-82fb5394e753" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count_non_unique_user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/count_non_unique_user.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count_unique_user_for_cookie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/count_unique_user_for_cookie.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count_unique_user_for_ip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/count_unique_user_for_ip.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newappfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/newappfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unique_ip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unique_ip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +64,7 @@
       <workItem from="1571889553827" duration="4192000" />
       <workItem from="1571920312166" duration="792000" />
       <workItem from="1572083889606" duration="1823000" />
-      <workItem from="1572174360142" duration="2223000" />
+      <workItem from="1572174360142" duration="4463000" />
     </task>
     <servers />
   </component>
