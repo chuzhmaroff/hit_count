@@ -137,11 +137,11 @@ def uniq_ip():
     ip = getip()
     b = a.split('\n')
     if ip in b:
-        return True
+        return False
     else:
         write_uniq_ip(ip)
         count_uniq_ip()
-        return False
+        return True
 
 
 def write_uniq_cookie(cookie):

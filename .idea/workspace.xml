@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ccb4a5eb-2120-42b5-b8f1-82fb5394e753" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/count_non_unique_user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/count_non_unique_user.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/count_unique_user_for_cookie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/count_unique_user_for_cookie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/count_unique_user_for_ip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/count_unique_user_for_ip.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newappfile.py" beforeDir="false" afterPath="$PROJECT_DIR$/newappfile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/stat.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/stat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unique_ip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/unique_ip.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +23,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/newappfile.py" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -35,6 +39,7 @@
   </component>
   <component name="RunManager">
     <configuration name="hit_count" type="Python.FlaskServer">
+      <option name="flaskDebug" value="true" />
       <module name="hit_count" />
       <option name="target" value="C:\Users\chuzh\Documents\GitHub\hit_count\newappfile.py" />
       <option name="targetType" value="PATH" />
@@ -61,6 +66,10 @@
       <option name="presentableId" value="Default" />
       <updated>1571847820866</updated>
       <workItem from="1571847822504" duration="4251000" />
+      <workItem from="1571889553827" duration="4192000" />
+      <workItem from="1571920312166" duration="792000" />
+      <workItem from="1572083889606" duration="1823000" />
+      <workItem from="1572174360142" duration="2223000" />
     </task>
     <servers />
   </component>
@@ -72,13 +81,15 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/hit_count$hit_count.coverage" NAME="hit_count Coverage Results" MODIFIED="1571853802534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/hit_count$hit_count.coverage" NAME="hit_count Coverage Results" MODIFIED="1572179241050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

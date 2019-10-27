@@ -18,6 +18,8 @@ def main():
         resp.set_cookie('UID', create_unique_cookie_for_user(), max_age=60 * 60 * 24 * 365 * 4)  # 4 years
         return resp
     else:  # у него уже есть куки от нашего сайта
+        # count_unique_user_for_ip()
+        # count_unique_user_for_cookie()
         resp = make_response(render_template('index.html'))
         return resp
 
@@ -27,7 +29,7 @@ def stat():
     with open("count_non_unique_user.txt") as f:
         count_non_unique_user = f.read()
     with open("count_unique_user_for_cookie.txt") as f:
-         count_unique_user_for_cookies = f.read()
+        count_unique_user_for_cookies = f.read()
     with open("count_unique_user_for_ip.txt") as f:
         count_unique_user_for_ip = f.read()
     resp = render_template("stat.html", date=str(datetime.now()),
@@ -43,11 +45,12 @@ def stat():
 
 def get_bool_unique_ip(ip):
     with open('unique_ip.txt') as f:
-        data = f.read().split('\n')
+        data = f.read()
+        data = data.split("\n")
         if ip in data:
-            return True
-        else:
             return False
+        else:
+            return True
 
 
 def add_unique_ip(ip):
@@ -73,7 +76,7 @@ def create_unique_cookie_for_user():
 
 
 def count_unique_user_for_ip():
-    with open("count_unique_user_for_ip.txt", "r+")as f:
+    with open("count_unique_user_for_ip.txt", "r+") as f:
         count = int(f.read()) + 1
         f.seek(0)
         f.truncate()
@@ -81,7 +84,7 @@ def count_unique_user_for_ip():
 
 
 def count_unique_user_for_cookie():
-    with open("count_unique_user_for_cookie.txt", "r+")as f:
+    with open("count_unique_user_for_cookie.txt", "r+") as f:
         count = int(f.read()) + 1
         f.seek(0)
         f.truncate()
